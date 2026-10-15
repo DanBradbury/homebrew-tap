@@ -5,21 +5,21 @@
 class Firekeeper < Formula
   desc "Keyboard-driven terminal dashboard for monitoring coding-agent harnesses"
   homepage "https://github.com/DanBradbury/firekeeper"
-  version "0.2.3"
+  version "0.2.4"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/DanBradbury/firekeeper/releases/download/v0.2.3/firekeeper_0.2.3_darwin_amd64.tar.gz"
-      sha256 "8a0bf800a574c3590a984acfbb6309112f07890a6063919f3402bd0d95c4f76c"
+      url "https://github.com/DanBradbury/firekeeper/releases/download/v0.2.4/firekeeper_0.2.4_darwin_amd64.tar.gz"
+      sha256 "af431c35f0616df0d389eebe4ff8906c42ac02d6e00c20f417e47ce2e65294d4"
 
       define_method(:install) do
         bin.install "firekeeper"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/DanBradbury/firekeeper/releases/download/v0.2.3/firekeeper_0.2.3_darwin_arm64.tar.gz"
-      sha256 "7a3c3914af0f499079dd1771a12918cc7326b323c9cf2f939ba03ffa81264b70"
+      url "https://github.com/DanBradbury/firekeeper/releases/download/v0.2.4/firekeeper_0.2.4_darwin_arm64.tar.gz"
+      sha256 "80798ef810c4c100af90ec205f901a94f064ffbe5dfb6f1a15e04f4437e5513b"
 
       define_method(:install) do
         bin.install "firekeeper"
@@ -29,15 +29,15 @@ class Firekeeper < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/DanBradbury/firekeeper/releases/download/v0.2.3/firekeeper_0.2.3_linux_amd64.tar.gz"
-      sha256 "0dde5fd306eeee7a620b8dbd14515a9eb1eee3f509d73ff1397aa5d127dfe7d8"
+      url "https://github.com/DanBradbury/firekeeper/releases/download/v0.2.4/firekeeper_0.2.4_linux_amd64.tar.gz"
+      sha256 "cb1b6160a9f022fe1d72328d416ddda7c20187f152e1855520b8e152c9415d30"
       define_method(:install) do
         bin.install "firekeeper"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/DanBradbury/firekeeper/releases/download/v0.2.3/firekeeper_0.2.3_linux_arm64.tar.gz"
-      sha256 "8055948b06b7c3e91369eee24679eea4e512f5aa414e8a1fc6feb0309e9c969e"
+      url "https://github.com/DanBradbury/firekeeper/releases/download/v0.2.4/firekeeper_0.2.4_linux_arm64.tar.gz"
+      sha256 "d5e7df18fba3c041890733408175573908eff741575b49d19b7c079f5a90da73"
       define_method(:install) do
         bin.install "firekeeper"
       end
