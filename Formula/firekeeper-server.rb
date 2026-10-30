@@ -5,20 +5,20 @@
 class FirekeeperServer < Formula
   desc "Dashboard server for Firekeeper transcripts"
   homepage "https://github.com/DanBradbury/firekeeper"
-  version "0.7.3"
+  version "0.8.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/DanBradbury/firekeeper-server-releases/releases/download/v0.7.3/firekeeper-server_0.7.3_darwin_amd64.tar.gz"
-      sha256 "ccd5dfeb046770a198fa434ff407d5457ccb216aa7efdaf0942b3786c3c17e35"
+      url "https://github.com/DanBradbury/firekeeper-server-releases/releases/download/v0.8.0/firekeeper-server_0.8.0_darwin_amd64.tar.gz"
+      sha256 "7117f5900ce9738b9fc76a8a4a8f092297b96a88101beaa2fc1d49cf081b0e9b"
 
       define_method(:install) do
         bin.install "firekeeper-server"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/DanBradbury/firekeeper-server-releases/releases/download/v0.7.3/firekeeper-server_0.7.3_darwin_arm64.tar.gz"
-      sha256 "c1c0077021dc82afa55c6e8b5c93b3f78513c1fd62dd5d4ed1258a93ba84569d"
+      url "https://github.com/DanBradbury/firekeeper-server-releases/releases/download/v0.8.0/firekeeper-server_0.8.0_darwin_arm64.tar.gz"
+      sha256 "e751a81f8db4640df4bd95c202f5d10e83af9c94881c9eb0b385c49f693af0c7"
 
       define_method(:install) do
         bin.install "firekeeper-server"
@@ -28,15 +28,15 @@ class FirekeeperServer < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/DanBradbury/firekeeper-server-releases/releases/download/v0.7.3/firekeeper-server_0.7.3_linux_amd64.tar.gz"
-      sha256 "7f1155a53247aae84d7bd80084300bee08ff6b77a1026e0c5b192387b9ef6294"
+      url "https://github.com/DanBradbury/firekeeper-server-releases/releases/download/v0.8.0/firekeeper-server_0.8.0_linux_amd64.tar.gz"
+      sha256 "5577488417ae55765cfc26a6ca45bcd9e848208da7845eb1b0e4f42e5d83bef0"
       define_method(:install) do
         bin.install "firekeeper-server"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/DanBradbury/firekeeper-server-releases/releases/download/v0.7.3/firekeeper-server_0.7.3_linux_arm64.tar.gz"
-      sha256 "d85a400758f3cefd9ee17f758d3d3f6e91d0c359a7773205f3a20f1651bd2709"
+      url "https://github.com/DanBradbury/firekeeper-server-releases/releases/download/v0.8.0/firekeeper-server_0.8.0_linux_arm64.tar.gz"
+      sha256 "370253050a842c38b9af992a1828cc801b9c38e62287df2a3e7abeec7e4384ac"
       define_method(:install) do
         bin.install "firekeeper-server"
       end
